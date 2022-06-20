@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/google_logo"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="100dp"
+        />
+    <EditText
+        android:imeOptions="actionSearch"
+        android:id="@+id/urlET"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Search"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="16sp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_back_brown_100" />
+
+        <RelativeLayout
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/quickLinksTxt"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#54000000"
+            />
+            <TextView
+                android:id="@+id/quickLinksTxt"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quick Links"
+                />
+
+            <View
+                android:layout_marginStart="10dp"
+                android:layout_toStartOf="@+id/quickLinksTxt"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#54000000"
+            />
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/instagramBtn"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:paddingStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/instagram"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instagram"
+                android:textStyle="bold"
+                android:textColor="#424242"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/twitterBtn"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:paddingStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/twitter"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twitter"
+                android:textStyle="bold"
+                android:textColor="#424242"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/youtubeBtn"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:paddingStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/youtube"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YouTube"
+                android:textStyle="bold"
+                android:textColor="#424242"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
